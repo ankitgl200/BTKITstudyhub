@@ -72,18 +72,73 @@
     </section>
 
     <!-- Ad Space (you’ll paste AdSense here later) -->
-    <section class="section">
-        <h2 class="section-title">Sponsored</h2>
-        <div class="ad-box">
-            <!-- When your site is ready & approved, paste AdSense code here -->
-            <p>Ad space – Google AdSense will appear here once approved.</p>
-        </div>
-    </section>
+<section class="section sponsor-sec">
+    <h2 class="section-title">Sponsored</h2>
+    <div class="ad-box">
+        <p>Ad space – Ads will appear here once approved.</p>
+    </div>
+</section>
+
 
     <!-- Footer -->
     <footer class="footer">
+    <div class="footer-container">
+
+        <div class="footer-section">
+            <h3>BTKIT Study Hub</h3>
+            <p>Your one-stop platform for notes, papers, syllabus and study resources for B.Tech students.</p>
+        </div>
+
+        <div class="footer-section">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="notes.html">Notes</a></li>
+                <li><a href="papers.html">Papers</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="cgpa.html">CGPA Calculator</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h4>Contact</h4>
+            <ul>
+                <li>Email: <a href="mailto:btkitsudyhub@gmail.com">btkitstudyhub@gmail.com</a></li>
+                <li>Instagram: <a href="#" target="_blank">N/A</a></li>
+                <li>Phone: N/A</li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h4>Information</h4>
+            <ul>
+                <li id="last-updated">Last Updated: loading...</li>
+                <li>Maintained by: BTKIT Seniors</li>
+                <li>Made for students, by students ❤️</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        © <span id="year-footer"></span> BTKIT Study Hub — All Rights Reserved.
+    </div>
+</footer>
+
+<!-- AUTO UPDATE LAST UPDATED & YEAR -->
+<script>
+    // Last updated date
+    const lastUpdated = document.getElementById("last-updated");
+    const updateDate = new Date(document.lastModified);
+    lastUpdated.textContent = "Last Updated: " + updateDate.toLocaleDateString();
+
+    // Current Year
+    document.getElementById("year-footer").textContent = new Date().getFullYear();
+</script>
+
+    <!-- <footer class="footer">
         <p>© <span id="year"></span> BTKIT Study Hub. Built by seniors for juniors.</p>
-    </footer>
+    </footer> -->
 
     <script src="script.js"></script>
 </body>
