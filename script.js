@@ -1,6 +1,3 @@
-alert("On opening any note, Book or Papers, an advertisement will be shown first. Close the ad to view the note.\nThank you for your support!");
-
-
 
 document.addEventListener("DOMContentLoaded", () => {
     const navToggle = document.getElementById("navToggle");
