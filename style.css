@@ -360,6 +360,32 @@ body {
     box-shadow: 0 4px 12px rgba(0,0,0,0.08);
 }
 
+.adbtn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: #2563eb;
+    color: white;
+    border-radius: 999px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: background var(--transition-fast);
+}
+
+.ad-responsive {
+    width: 100%;
+    max-width: 728px;   /* desktop size */
+    height: auto;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.ad-responsive iframe {
+    width: 100% !important;
+    height: auto !important;
+}
+
 
 
 
