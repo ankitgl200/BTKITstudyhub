@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BTKIT Study Hub | Notes</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="nav-logo">
+            <span class="logo-dot"></span>
+            <span>BTKIT Study Hub</span>
+        </div>
+        <nav class="nav-links" id="navLinks">
+            <a href="index.html">Home</a>
+            <a href="notes.html" class="active">Notes</a>
+            <a href="papers.html">Papers</a>
+            <a href="resources.html">Resources</a>
+        </nav>
+        <button class="nav-toggle" id="navToggle">☰</button>
+    </header>
+
+    <section class="page-header">
+        <h1>Notes Library</h1>
+        <p>Select semester and open/download PDF notes hosted on Google Drive.</p>
+    </section>
+
+
+    <!-- Notes Grid -->
+    <section class="section">
+        <div class="card-grid" id="notesGrid">
+            <!-- Example Note Card – change links to your Google Drive links -->
+
+            <div class="card note-card" data-sem="sem1">
+                <h3>Engineering Mathematics I</h3>
+                <p>Complete notes for 1st semester Maths.</p>
+                
+                <div class="card-actions">
+                    <a href="https://drive.google.com/FILE_ID_MATH1" target="_blank" class="btn primary-sm">
+                        View / Download
+                    </a>
+                </div>
+            </div>
+
+            <div class="card note-card" data-sem="sem1">
+                <h3>Engineering Physics</h3>
+                <p>Unit-wise handwritten and typed notes.</p>
+                <div class="card-actions">
+                    <a href="https://drive.google.com/FILE_ID_PHYSICS" target="_blank" class="btn primary-sm">
+                        View / Download
+                    </a>
+                </div>
+            </div>
+
+            <div class="card note-card" data-sem="sem2">
+                <h3>Engineering Mathematics II</h3>
+                <p>Detailed notes with solved examples.</p>
+                <div class="card-actions">
+                    <a href="https://drive.google.com/FILE_ID_MATH2" target="_blank" class="btn primary-sm">
+                        View / Download
+                    </a>
+                </div>
+            </div>
+
+            <div class="card note-card" data-sem="sem2">
+                <h3>Programming in C</h3>
+                <p>Notes + important programs for exams.</p>
+                <div class="card-actions">
+                    <a href="https://drive.google.com/FILE_ID_C" target="_blank" class="btn primary-sm">
+                        View / Download
+                    </a>
+                </div>
+            </div>
+
+            <!-- Add more cards here for your subjects -->
+        </div>
+    </section>
+
+    <!-- Ad Space -->
+    <section class="section">
+        <div class="ad-box">
+            <p>Ad space for notes page.</p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>© <span id="year"></span> BTKIT Study Hub.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
