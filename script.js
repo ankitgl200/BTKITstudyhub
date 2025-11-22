@@ -1,3 +1,7 @@
+alert("On opening any note, Book or Papers, an advertisement will be shown first. Close the ad to view the note.\nThank you for your support!");
+
+
+
 document.addEventListener("DOMContentLoaded", () => {
     const navToggle = document.getElementById("navToggle");
     const navLinks = document.getElementById("navLinks");
@@ -42,3 +46,21 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
 });
+
+
+
+
+// adscript
+function redirectWithAd(id, mainUrl, adUrl) {
+    let count = sessionStorage.getItem(id) || 0;
+    count = Number(count) + 1;
+    sessionStorage.setItem(id, count);
+
+    if (count === 1) {
+        // First click (per reload) → show ad
+        window.open(adUrl, "_blank");
+    } else {
+        // Second+ click → main content
+        window.open(mainUrl, "_blank");
+    }
+}
